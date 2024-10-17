@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E07F14ED-6E64-4825-8CCF-3AC103C5807D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Alrahman_Allama_Allquran</RootNamespace>
+    <AssemblyName>Alrahman_Allama_Allquran</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chat\frmDisplayMessagesPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chat\frmDisplayMessagesPage.Designer.cs">
+      <DependentUpon>frmDisplayMessagesPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chat\frmSendMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chat\frmSendMessage.Designer.cs">
+      <DependentUpon>frmSendMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global Class\clsGlobalObjects.cs" />
+    <Compile Include="Global Class\clsUtil.cs" />
+    <Compile Include="Global Class\clsValidation.cs" />
+    <Compile Include="Invitations\frmShowStudentsInvitations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invitations\frmShowStudentsInvitations.Designer.cs">
+      <DependentUpon>frmShowStudentsInvitations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parent\frmAddUpdateParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parent\frmAddUpdateParent.Designer.cs">
+      <DependentUpon>frmAddUpdateParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parent\frmChildGradesDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parent\frmChildGradesDetails.Designer.cs">
+      <DependentUpon>frmChildGradesDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parent\frmParentChildrenList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parent\frmParentChildrenList.Designer.cs">
+      <DependentUpon>frmParentChildrenList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Controls\ctrlPersonCardInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Controls\ctrlPersonCardInfo.Designer.cs">
+      <DependentUpon>ctrlPersonCardInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Controls\ctrlPersonCardInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Controls\ctrlPersonCardInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrlPersonCardInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\frmAddUpdatePerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmAddUpdatePerson.Designer.cs">
+      <DependentUpon>frmAddUpdatePerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\frmListPeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmListPeople.Designer.cs">
+      <DependentUpon>frmListPeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\frmShowPersonInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmShowPersonInfo.Designer.cs">
+      <DependentUpon>frmShowPersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Races\frmLocalRaceChoosingPage[.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Races\frmLocalRaceChoosingPage[.Designer.cs">
+      <DependentUpon>frmLocalRaceChoosingPage[.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Races\frmShowRacescs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Races\frmShowRacescs.Designer.cs">
+      <DependentUpon>frmShowRacescs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Revision\frmAddRevision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Revision\frmAddRevision.Designer.cs">
+      <DependentUpon>frmAddRevision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Controls\ctrlStudentCardInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student\Controls\ctrlStudentCardInfo.Designer.cs">
+      <DependentUpon>ctrlStudentCardInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\frmAddUpdateStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\frmAddUpdateStudent.Designer.cs">
+      <DependentUpon>frmAddUpdateStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Revision\frmAllStudentRevsionRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Revision\frmAllStudentRevsionRecords.Designer.cs">
+      <DependentUpon>frmAllStudentRevsionRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\frmShowStudentInfoCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\frmShowStudentInfoCard.Designer.cs">
+      <DependentUpon>frmShowStudentInfoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\frmStudentAdding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\frmStudentAdding.Designer.cs">
+      <DependentUpon>frmStudentAdding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\frmStudentChatPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\frmStudentChatPage.Designer.cs">
+      <DependentUpon>frmStudentChatPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\frmStudentsOrdering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\frmStudentsOrdering.Designer.cs">
+      <DependentUpon>frmStudentsOrdering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\Controls\ctrlStudentInfoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Teacher\Controls\ctrlStudentInfoCard.Designer.cs">
+      <DependentUpon>ctrlStudentInfoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\frmAddingQuraan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\frmAddingQuraan.Designer.cs">
+      <DependentUpon>frmAddingQuraan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\frmStudentListForTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\frmStudentListForTeacher.Designer.cs">
+      <DependentUpon>frmStudentListForTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\frmSurahsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\frmSurahsList.Designer.cs">
+      <DependentUpon>frmSurahsList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="chat\frmDisplayMessagesPage.resx">
+      <DependentUpon>frmDisplayMessagesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chat\frmSendMessage.resx">
+      <DependentUpon>frmSendMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invitations\frmShowStudentsInvitations.resx">
+      <DependentUpon>frmShowStudentsInvitations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parent\frmAddUpdateParent.resx">
+      <DependentUpon>frmAddUpdateParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parent\frmChildGradesDetails.resx">
+      <DependentUpon>frmChildGradesDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parent\frmParentChildrenList.resx">
+      <DependentUpon>frmParentChildrenList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Controls\ctrlPersonCardInfo.resx">
+      <DependentUpon>ctrlPersonCardInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Controls\ctrlPersonCardInfoWithFilter.resx">
+      <DependentUpon>ctrlPersonCardInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmAddUpdatePerson.resx">
+      <DependentUpon>frmAddUpdatePerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmListPeople.resx">
+      <DependentUpon>frmListPeople.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmShowPersonInfo.resx">
+      <DependentUpon>frmShowPersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Races\frmLocalRaceChoosingPage[.resx">
+      <DependentUpon>frmLocalRaceChoosingPage[.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Races\frmShowRacescs.resx">
+      <DependentUpon>frmShowRacescs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Revision\frmAddRevision.resx">
+      <DependentUpon>frmAddRevision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\Controls\ctrlStudentCardInfo.resx">
+      <DependentUpon>ctrlStudentCardInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\frmAddUpdateStudent.resx">
+      <DependentUpon>frmAddUpdateStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Revision\frmAllStudentRevsionRecords.resx">
+      <DependentUpon>frmAllStudentRevsionRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\frmShowStudentInfoCard.resx">
+      <DependentUpon>frmShowStudentInfoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\frmStudentAdding.resx">
+      <DependentUpon>frmStudentAdding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\frmStudentChatPage.resx">
+      <DependentUpon>frmStudentChatPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\frmStudentsOrdering.resx">
+      <DependentUpon>frmStudentsOrdering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\Controls\ctrlStudentInfoCard.resx">
+      <DependentUpon>ctrlStudentInfoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\frmAddingQuraan.resx">
+      <DependentUpon>frmAddingQuraan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\frmStudentListForTeacher.resx">
+      <DependentUpon>frmStudentListForTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\frmSurahsList.resx">
+      <DependentUpon>frmSurahsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\alrahman_Allama_Alquran_Business\alrahman_Allama_Alquran_Business.csproj">
+      <Project>{59f8d905-a5ef-4768-914e-ac80374f6470}</Project>
+      <Name>alrahman_Allama_Alquran_Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-10-07 135130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-10-07 135238.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2024-09-24_161752-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2024-09-23_113209-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-10-07 1351301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-10-07 1352381.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2024-09-30_113515-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-10-08 105117.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran_görüntüsü_2024-10-08_105354-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran_görüntüsü_2024-10-08_153447-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran_görüntüsü_2024-10-08_153731-removebg-preview.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
